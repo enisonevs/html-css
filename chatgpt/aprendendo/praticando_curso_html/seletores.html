@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando seletores</title>
+    <style>
+        body {
+        background-color: #5FC9EC;
+        text-align: justify;
+        }
+         h1 {
+        background-color: #285564;
+        color:#ffffff;
+        text-align: center;
+         }
+         h2{
+            background-color: #438FA8;
+            color:#ffffff;
+         }
+
+         span:hover{
+            color: brown;
+         }
+         p {
+            text-align: justify;
+         }
+         ul li::after{
+            content:' 1945';
+         }
+         div > p {
+            display: none;
+         }
+         div:hover>p{
+            display: block;
+            color: #ffffff;
+            background-color: red;
+         }
+    </style>
+</head>
+<body>
+    <h1>Alguns seletores que aprendiz até agora</h1>
+    <h2>#ID</h2>
+    <p>Só podemos usar um, sobrepõe as configurações do class</p>
+    <h2>.Class</h2>
+    <p>O mais comum, colocamos as configurações e damos um nome a elas para usar no htlm</p>
+    <h2>: Pseudo classe</h2>
+    <p>São configurações quando nosso elemento sofre uma ação, como ser clicado ou passar o mouse por cima
+    <h2>:: Pseudo contet</h2>
+    <p>conteúdo que será colocado na nossa tag que colocarmos ele</p>
+    <p>Exemplo:</p>
+    <code>a::after{ <br> content:'[link]'; <br> color: darkgrey;<br>}</code>
+    <p>aqui vai um exemplo de inclusão de content</p>
+    <ul>
+        <li>Adicionaremos anos</li>
+        <li>conteudo dois</li>
+        <li>conteudo tres</li>
+    </ul>
+    <h2>Dando exemplo de como esconder mensagens</h2>
+    <div>
+        Passe o mouse aqui
+        <p>mensagem oculta</p>
+    </div>
+</body>
+</html>

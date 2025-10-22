@@ -1,0 +1,474 @@
+/* RESET & BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+  background-color: #9e371d;
+  padding: 15px 30px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.empresa-nome {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.icone-logo {
+  height: 40px;
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* MAIN */
+main {
+  padding: 100px 30px 30px;
+}
+
+/* BANNER */
+.banner {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 30px;
+}
+
+.banner-texto {
+  max-width: 600px;
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.banner p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.botao {
+  display: inline-flex;
+  align-items: center;
+  background-color: #800000;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.botao:hover {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+.botao i {
+  margin-left: 8px;
+}
+
+.banner-imagem img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* CARROSSEL */
+.carrossel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carrossel img {
+  width: 100%;
+  display: none;
+}
+
+.carrossel img.ativo {
+  display: block;
+}
+
+.seta {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.seta.anterior {
+  left: 10px;
+}
+
+.seta.proxima {
+  right: 10px;
+}
+
+.seta:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* VAGAS */
+.vagas {
+  padding: 60px 40px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.vagas-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.campo-pesquisa {
+  margin-top: 30px;
+  display: flex;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.campo-pesquisa input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.campo-pesquisa button {
+  background-color: #fd1515;
+  color: white;
+  border: none;
+  padding: 0 16px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+}
+
+.campo-pesquisa button:hover {
+  background-color: #f10808;
+}
+
+/* CARDS */
+.cards-vagas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card-vaga {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.card-vaga:hover {
+  transform: translateY(-5px);
+}
+
+.card-vaga h3 {
+  margin-bottom: 10px;
+  color: #800000;
+}
+
+.card-vaga p {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.btn-candidatar {
+  display: inline-block;
+  margin-top: 12px;
+  background-color: #800000;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.btn-candidatar:hover {
+  background-color: #ffd82c;
+}
+
+/* SOBRE */
+.sobre {
+  background-color: #f2f2f2;
+  padding: 60px 40px;
+}
+
+.sobre-cabecalho {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sobre-cabecalho h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.sobre-cabecalho p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.sobre-conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.sobre-textos {
+  flex: 1;
+  min-width: 300px;
+}
+
+.sobre-textos h3 {
+  font-size: 1.5rem;
+  color: #800000;
+  margin-bottom: 20px;
+}
+
+.sobre-textos p,
+.sobre-textos li {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.sobre-textos ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.sobre-imagem {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.sobre-imagem img {
+  max-width: 80%;
+  border-radius: 10px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .empresa-nome {
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+
+  .banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-texto,
+  .banner-imagem {
+    max-width: 100%;
+  }
+
+  .sobre-conteudo {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .sobre-imagem {
+    margin-top: 30px;
+  }
+}
+
+/* RODAPÉ */
+.rodape {
+  background-color: #800000;
+  color: white;
+  padding: 30px 40px 20px;
+  font-size: 0.95rem;
+}
+
+.rodape-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.rodape-social a {
+  color: white;
+  margin-right: 15px;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.rodape-social a:hover {
+  color: #ffcc00;
+}
+
+.rodape-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: right;
+}
+
+.rodape-logo h4 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.rodape-logo p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin: 4px 0 0;
+}
+
+.icone-footer {
+  width: 36px;
+  height: auto;
+}
+
+.rodape-direitos {
+  text-align: center;
+  margin-top: 20px;
+  color: #aaa;
+  font-size: 0.85rem;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  .rodape-conteudo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .rodape-logo {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.job-application {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.job-application h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1f2937;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.form-group input[type="submit"] {
+  background-color: #2563eb;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.form-group input[type="submit"]:hover {
+  background-color: #1d4ed8;
+}

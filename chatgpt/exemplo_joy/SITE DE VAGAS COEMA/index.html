@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GRUPO HERNANDES</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <div class="empresa-nome">
+      <img src="IMAGENS/MALETA.png" alt="Ícone da empresa" class="icone-logo" />
+      GRUPO HERNANDES
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#vagas">Vagas</a></li>
+        <li><a href="#sobre">Sobre Nós</a></li>
+        <li><a href="#">Contatos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seção Banner -->
+    <section class="banner">
+      <div class="banner-texto">
+        <h1>Construa sua carreira conosco</h1>
+        <p>Descubra oportunidades que combinam com suas habilidades e objetivos profissionais. Estamos à procura de talentos como você!</p>
+        <a href="#vagas" class="botao">
+          Ver vagas disponíveis <i>➔</i>
+        </a>
+      </div>
+
+      <div class="banner-imagem">
+        <div class="carrossel-container">
+          <div class="carrossel">
+            <img src="IMAGENS/img2.png" class="ativo" alt="Equipe em reunião">
+            <img src="IMAGENS/img3.png" alt="Ambiente de trabalho">
+            <img src="IMAGENS/img4.png" alt="Colaboradores felizes">
+          </div>
+          <button class="seta anterior" aria-label="Imagem anterior">&#10094;</button>
+          <button class="seta proxima" aria-label="Próxima imagem">&#10095;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Vagas -->
+    <section class="vagas" id="vagas">
+      <div class="vagas-container">
+        <h2>Vagas disponíveis</h2>
+        <p>Explore nossas oportunidades atuais e encontre a posição ideal para o próximo passo em sua carreira.</p>
+
+        <div class="campo-pesquisa">
+          <input type="text" id="busca-vaga" placeholder="Buscar vagas por cargo, área ou local..." aria-label="Campo de busca por vagas" />
+          <button aria-label="Buscar"><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+
+      <p id="mensagem-nenhuma-vaga" style="display: none; margin-top: 20px; color: #888;">Nenhuma vaga encontrada.</p>
+
+      <div class="cards-vagas">
+        <!-- Repetição de cards de vagas -->
+        <div class="card-vaga">
+          <h3>Gerente de Atacado</h3>
+          <p><strong>Local:</strong> Manaus - AM</p>
+          <p><strong>Tipo:</strong> Efetivo</p>
+          <p><strong>Requisitos:</strong> Ensino médio completo, conhecimento em estoque e separação.</p>
+          <a href="#" class="btn-candidatar" data-vaga="Gerente de Atacado">Candidatar-se</a>
+        </div>
+     <div class="card-vaga">
+          <h3>Açougueiro</h3>
+          <p><strong>Local:</strong> Manaus - AM</p>
+          <p><strong>Tipo:</strong> Efetivo</p>
+          <p><strong>Requisitos:</strong> Ensino médio completo, conhecimento em estoque e separação.</p>
+          <a href="#" class="btn-candidatar" data-vaga="Açougueiro">Candidatar-se</a>
+        </div>
+     <div class="card-vaga">
+          <h3>Atendente Operador</h3>
+          <p><strong>Local:</strong> Manaus - AM</p>
+          <p><strong>Tipo:</strong> Efetivo</p>
+          <p><strong>Requisitos:</strong> Ensino médio completo, conhecimento em estoque e separação.</p>
+          <a href="#" class="btn-candidatar" data-vaga="Atendente Operador">Candidatar-se</a>
+        </div>
+     <div class="card-vaga">
+          <h3>Auxiliar de Serviços Gerais</h3>
+          <p><strong>Local:</strong> Manaus - AM</p>
+          <p><strong>Tipo:</strong> Efetivo</p>
+          <p><strong>Requisitos:</strong> Ensino médio completo, conhecimento em estoque e separação.</p>
+          <a href="#" class="btn-candidatar" data-vaga="Auxiliar de Serviços Gerais">Candidatar-se</a>
+        </div>
+        <div class="card-vaga">
+          <h3>Ajudante de Depósito</h3>
+          <p><strong>Local:</strong> Manaus - AM</p>
+          <p><strong>Tipo:</strong> Efetivo</p>
+          <p><strong>Requisitos:</strong> Ensino médio completo, conhecimento em estoque e separação.</p>
+          <a href="#" class="btn-candidatar" data-vaga="Ajudante de Depósito">Candidatar-se</a>
+        </div>
+      <div class="card-vaga">
+          <h3>Auxilar de confeitaria</h3>
+          <p><strong>Local:</strong> Manaus - AM</p>
+          <p><strong>Tipo:</strong> Efetivo</p>
+          <p><strong>Requisitos:</strong> Ensino médio completo, conhecimento em estoque e separação.</p>
+          <a href="#" class="btn-candidatar" data-vaga="Auxiliar de confeitaria">Candidatar-se</a>
+        </div>
+
+
+        <!-- Mais cards... -->
+        <!-- Você já adicionou os demais corretamente -->
+      </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section class="sobre" id="sobre">
+      <div class="sobre-cabecalho">
+        <h2>Sobre Nossa Empresa</h2>
+        <p>Conheça um pouco mais sobre nossa história, valores e cultura organizacional.</p>
+      </div>
+
+      <div class="sobre-conteudo">
+        <div class="sobre-textos">
+          <div class="missao">
+            <h3>Nossa Missão</h3>
+            <p>Conectar talentos às melhores oportunidades, promovendo o crescimento profissional e contribuindo para o sucesso das organizações através de soluções inovadoras em recursos humanos.</p>
+          </div>
+
+          <div class="valores">
+            <h3>Nossos Valores</h3>
+            <ul>
+              <li><strong>Transparência:</strong> Comunicação clara e honesta em todos os processos.</li>
+              <li><strong>Inovação:</strong> Busca constante por soluções criativas e eficientes.</li>
+              <li><strong>Respeito:</strong> Valorização da diversidade e das diferenças individuais.</li>
+              <li><strong>Excelência:</strong> Compromisso com a qualidade em tudo o que fazemos.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="sobre-imagem">
+          <img src="IMAGENS/MULHER RH.png" alt="Equipe de RH">
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--BANCO DE TALENTO-->
+<section class="job-application">
+    <h2>Cadastre seu currículo no banco de talentos</h2>
+    
+    <div class="form-container">
+      <form id="formCurriculo" action="enviar_curriculo.php" method="POST" enctype="multipart/form-data">
+        
+        <div class="form-group">
+          <label for="nome">Nome Completo:</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required autocomplete="name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="exemplo@email.com" required autocomplete="email">
+        </div>
+
+        <div class="form-group">
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required autocomplete="tel">
+        </div>
+
+        <div class="form-group">
+          <label for="vaga">Vaga Pretendida:</label>
+          <select id="vaga" name="vaga" required>
+            <option value="" disabled selected>Selecione uma vaga</option>
+            <option value="Analista de Estoque">Analista de Estoque</option>
+            <option value="Assistente de T.I">Assistente de T.I</option>
+            <option value="Gerente de loja">Gerente de Loja</option>
+            <option value="Operador de loja">Operador de Loja</option>
+            <option value="Lider de loja">Líder de Loja</option>
+            <option value="Atendente Operador">Atendente Operador</option>
+            <option value="PCD">PCD</option>
+            <option value="Conferente">Conferente</option>
+            <option value="Assistente de Faturamento">Assistente de Faturamento</option>
+            <option value="Assistente de RH">Assistente de RH</option>
+            <option value="Auxiliar Administrativo">Auxiliar Administrativo</option>
+            <option value="Auxiliar de Açougue">Auxiliar de Açougue</option>
+            <option value="Auxiliar de Faturamento">Auxiliar de Faturamento</option>
+            <option value="Auxiliar de Serviços Gerais">Auxiliar de Serviços Gerais</option>
+            <option value="Cartazista">Cartazista</option>
+            <option value="Fiscal de Caixa">Fiscal de Caixa</option>
+            <option value="Fiscal de Prevenção">Fiscal de Prevenção</option>
+            <option value="Gerente de Atacado">Gerente de Atacado</option>
+            <option value="Jovem Aprendiz">Jovem Aprendiz</option>
+            <option value="Líder de Açougue">Líder de Açougue</option>
+            <option value="Líder de Loja - FLV">Líder de Loja - FLV</option>
+            <option value="Líder de Loja - Mercearia">Líder de Loja - Mercearia</option>
+            <option value="Líder de Loja - PAS">Líder de Loja - PAS</option>
+            <option value="Motoboy">Motoboy</option>
+            <option value="Motorista - Cat. B">Motorista - Cat. B</option>
+            <option value="Motorista Carreteiro - Cat. D">Motorista Carreteiro - Cat. D</option>
+            <option value="Motorista de Caminhão - Cat. E">Motorista de Caminhão - Cat. E</option>
+            <option value="Operador de Empilhadeira">Operador de Empilhadeira</option>
+            <option value="Operador de Loja - FLV">Operador de Loja - FLV</option>
+            <option value="Operador de Loja - Mercearia">Operador de Loja - Mercearia</option>
+            <option value="Operador de Loja - PAS">Operador de Loja - PAS</option>
+            <option value="Padeiro">Padeiro</option>
+            <option value="Peixeiro">Peixeiro</option>
+            <option value="Vendedor(a)">Vendedor(a)</option>
+            <option value="Vendedor(a) Externo">Vendedor(a) Externo</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="curriculo">Anexar Currículo (PDF ou DOC):</label>
+          <input type="file" id="curriculo" name="curriculo" accept=".pdf,.doc,.docx" required>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" value="Enviar">
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+
+  <!--RODAPÉ-->
+<footer class="rodape">
+  <div class="rodape-conteudo">
+    <div class="rodape-social">
+      <a href="https://www.facebook.com/supermercadoscoema" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/supermercadoscoema" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/supermercados-coema-friotrans-atacado/" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+
+    <div class="rodape-logo">
+      <img src="IMAGENS/MALETA.png" alt="Ícone RH" class="icone-footer" />
+      <div>
+        <h4>RH COEMA & FRIOTRANS</h4>
+        <p>Conectando talentos a oportunidades</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="rodape-direitos">
+    <p>© 2025 Portal de Carreiras. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+  <!-- Scripts -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const inputBusca = document.getElementById("busca-vaga");
+      const cards = document.querySelectorAll(".card-vaga");
+      const mensagem = document.getElementById("mensagem-nenhuma-vaga");
+
+      inputBusca.addEventListener("input", () => {
+        const termo = inputBusca.value.toLowerCase();
+        let encontrou = false;
+
+        cards.forEach(card => {
+          const texto = card.innerText.toLowerCase();
+          const visivel = texto.includes(termo);
+          card.style.display = visivel ? "block" : "none";
+          if (visivel) encontrou = true;
+        });
+
+        mensagem.style.display = encontrou ? "none" : "block";
+      });
+
+      document.querySelectorAll(".btn-candidatar").forEach(btn => {
+        btn.addEventListener("click", e => {
+          e.preventDefault();
+          const vaga = btn.getAttribute("data-vaga");
+          const assunto = encodeURIComponent("Candidatura para " + vaga);
+          window.location.href = `mailto:recrutamento@supercoema.com.br?subject=${assunto}`;
+        });
+      });
+
+      // Carrossel
+      const imagens = document.querySelectorAll(".carrossel img");
+      const btnAnterior = document.querySelector(".seta.anterior");
+      const btnProxima = document.querySelector(".seta.proxima");
+      let indiceAtual = 0;
+
+      function mostrarImagem(indice) {
+        imagens.forEach(img => img.classList.remove("ativo"));
+        imagens[indice].classList.add("ativo");
+      }
+
+      btnAnterior.addEventListener("click", () => {
+        indiceAtual = (indiceAtual - 1 + imagens.length) % imagens.length;
+        mostrarImagem(indiceAtual);
+      });
+
+      btnProxima.addEventListener("click", () => {
+        indiceAtual = (indiceAtual + 1) % imagens.length;
+        mostrarImagem(indiceAtual);
+      });
+
+      setInterval(() => {
+        indiceAtual = (indiceAtual + 1) % imagens.length;
+        mostrarImagem(indiceAtual);
+      }, 5000);
+    });
+  </script>
+  <!--BANCO DE TALENTO-->
+  
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticandos Fontes externas e internas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+        @font-face {
+            font-family: 'enyson';
+            src: url('fonts/TEXAT\ BOLD\ PERSONAL\ USE___.otf') format(opentype);
+            font-style: normal;
+            font-weight: normal;
+        }
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: aquamarine;
+        }
+
+        h1{
+            font: oblique bolder 3em 'work sans', sans-serif;
+        }
+
+        p{
+            font-family: "Oswald", sans-serif;
+            font-size: 1.2em;
+        }
+
+        h2{
+           font-family:'enyson';
+        }
+    </style>
+</head>
+<body>
+    <h1>Formas e mudar minhas fontes</h1>
+    <p>Estarei praticando fontes porque estou achando que está ficando muito massivo e complicado demais para apenas assistir, anotar e passar para próxima aula</p>
+    <h2>Maneira 1</h2>
+    <p>Podemos mudar nossas fontes usando, por exemplo, o google fonts</p>
+    <p>Escolhendo a fonte e pegando o @import e o font-family CSS e colocando na classe onde queremos usar</p>
+    <h2>Maneira 2</h2>
+        <p>Podemos baixar alguma fonte e usar no nosso servidor, de exemplo vamos usar o "dafont.com"</p>
+        <p>Em seguida baixamos a fonte em formato otf ou ttf (ou ambos)</p>
+        <p>adicionamos o endereço onde vamos deiaxar salvo nossa fonte e o formato otf e ttf</p>
+        <h3>Para colocar no formato</h3>
+        <ul>
+            <li>opentype = otf</li>
+            <li>truetype = ttf</li>
+        </ul>
+        <p>criamos para dar a essa nossa fonte</p>
+        <p>para usarmos temos que colocar o nome que criamos na classe</p>
+</body>
+</html>

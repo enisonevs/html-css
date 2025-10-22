@@ -1,0 +1,118 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'minhafonte';
+    src: url(fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.638);
+    
+}
+.font_android{
+    font-family:'minhafonte', sans-serif ;
+    color: #58955b;
+}
+header {
+    text-align: center;
+    background: linear-gradient(to bottom, #79ff79, #008017);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5); 
+}
+header > h1 {
+    font-family: 'Fira Code', monospace;
+    color: white;
+    margin: 0px 0px 20px 0px;
+   
+}
+header > p {
+    text-align: center;
+    color: white;
+    margin: 30px;
+}
+h2 {
+    background-color: #79ff796d;
+}
+nav{
+    text-align: left;
+    font-weight: bold;
+    padding: 0px 0px 10px 30px;
+}
+nav > a {
+    text-decoration: none;
+    color: white;
+    margin: 5px 0px 5px 0px;
+    padding: 5px;
+}
+img{
+    text-align: center;
+}
+main { 
+    background-color: #5ec063;
+}
+iframe {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+p {
+    text-indent: 2em;
+}
+.section1{
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: white;
+    margin-left: 150px;
+    margin-right: 150px;
+    
+}
+.section2{
+    background-color: #79ff7965;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 30px;
+}
+ 
+.section-header {
+    background-color: green;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.section-header h1 {
+    color: white;
+    margin: 0;
+    font-size: 1.5em;
+    text-align: left;
+}
+section > h1{
+    color: white;
+}
+.link{
+    text-decoration: none;
+    color: #008017;
+}
+.lista-flex{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.lista-flex ul{
+    flex: 1;
+    list-style-position: inside;
+    padding-left: 0
+
+}
+.dist_list{
+    margin: 10px;
+    border: 10;
+    padding: 10px;
+}
+footer{
+    background: #008017;
+    color: white;
+    text-align: center;
+}

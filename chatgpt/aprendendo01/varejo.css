@@ -1,0 +1,72 @@
+@charset "utf-8"
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #1D7373;
+    padding: 20px 30px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    top: 0;
+
+}
+body{
+    margin: 0;  
+    width: 100%;
+}
+main{ 
+    
+    gap: 14px;
+}
+ h1{
+    justify-content: flex-end;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+.card{
+    padding: 18px;
+    background: rgb(255, 255, 255,.03);
+    border: 1px solid rgba(221, 18, 18, 0.06);
+    border-radius: 12px;
+    min-height: 72px;
+}
+.container{
+    background-color: #0F5959;
+    border: 2px solid rgb(142, 208, 252);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    
+    align-items: center;
+    justify-content: center;
+}
+.container h1{
+    color: aliceblue;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.shell{
+    max-width: 1000;
+    margin: 0 auto;
+    padding: 20px;
+    background: #107361;
+    border-radius: 14px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
